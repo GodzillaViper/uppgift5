@@ -9,15 +9,14 @@ def is_prime(number):
 def count_primes_in_number(number):
     str_number = str(number)
     count = 0
-    primes=[]
+    primes=set()#ändring
     for i in range(len(str_number)):
         for j in range(i + 1, len(str_number) + 1):
             substring = int(str_number[i:j])
-            if is_prime(substring):
-                count += 1
-                primes.append(substring)
-    print(primes)
-    return count
+            if is_prime(substring):# ändring
+                primes.add(substring) # ändring
+    print(list(primes)) # ändring
+    return len(primes) #ändring
 
 # anger ett tal
 user_input = int(input("Ange ett heltal: "))
