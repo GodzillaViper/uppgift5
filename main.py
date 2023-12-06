@@ -1,5 +1,4 @@
-# Funktion för att kontrollera om ett tal är ett primtal
-def is_prime(number):
+def is_prime(number):# Funktion för att kontrollera om ett tal är ett primtal
     # Om talet är mindre än 2 är det inte ett primtal
     if number < 2:
         return False
